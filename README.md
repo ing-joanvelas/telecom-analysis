@@ -77,21 +77,6 @@ originales.
     -   Elaboración de recomendaciones para la oferta de planes y las
         estrategias de fidelización.
 
-## Cómo ejecutar el notebook
-
-### Opción recomendada: Google Colab
-
-1.  Descarga o clona el repositorio que contiene este `README.md` y el
-    notebook.
-2.  Abre [Google Colab](https://colab.research.google.com/).
-3.  Selecciona **Archivo → Subir cuaderno** y carga el archivo `.ipynb`.
-4.  Carga los archivos `users.csv`, `usage.csv` y `plans.csv` en el
-    entorno de Colab, o guárdalos en Google Drive.
-5.  Si utilizas Google Drive, monta la unidad desde el notebook y ajusta
-    las rutas de los archivos.
-6.  Ejecuta las celdas en orden, desde la carga de datos hasta el
-    análisis ejecutivo.
-
 ### Librerías
 
 El notebook utiliza principalmente:
@@ -108,25 +93,4 @@ instálala en una celda:
 !pip install pandas numpy matplotlib seaborn
 ```
 
-## Guía breve de reproducción
 
-1.  Coloca los tres archivos CSV en la ubicación indicada por las rutas
-    del notebook.
-2.  Verifica que los nombres y las columnas de los archivos coincidan
-    con los utilizados en el código.
-3.  Ejecuta las celdas de importación y carga de datos.
-4.  Ejecuta secuencialmente la limpieza, el análisis de valores
-    faltantes y atípicos, la agregación por usuario y la creación de
-    segmentos.
-5.  Revisa las tablas, los gráficos y los resultados de las celdas de
-    análisis ejecutivo.
-6.  Para reproducir los resultados, utiliza los mismos archivos de
-    entrada y ejecuta todas las celdas en orden, sin omitir las etapas
-    que crean dataframes o columnas utilizadas posteriormente.
-
-## Resultado esperado
-
-Al finalizar, se obtiene un perfil agregado de los usuarios con sus
-cantidades de mensajes, llamadas y minutos de llamadas; segmentos por
-nivel de uso y edad; visualizaciones de sus distribuciones; y
-conclusiones con recomendaciones comerciales para ConnectaTel.
